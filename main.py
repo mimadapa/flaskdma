@@ -3,5 +3,7 @@ import imageprocessing as img
 app = Flask(__name__)
 
 @app.route("/")
-def mail():
-    return img.process()
+def main():
+    imgprocessed = img.process()
+
+    return imgprocessed
